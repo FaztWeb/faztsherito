@@ -1,0 +1,33 @@
+{
+  "name": "faztsherito",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node --ignore db.json",
+    "server": "json-server --watch db.json",
+    "build": "babel src -d dist",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "twitch",
+    "bot",
+    "moderator"
+  ],
+  "author": "fazt",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "fs-extra": "^10.0.0",
+    "json-server": "^0.16.3",
+    "tmi.js": "^1.8.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.7",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "nodemon": "^2.0.12"
+  }
+}

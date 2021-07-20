@@ -1,0 +1,9 @@
+node_modules
+
+db.json
+
+.env
+
+ngrok.exe
+
+dist
